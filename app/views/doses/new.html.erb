@@ -1,0 +1,9 @@
+<%= form_for [@cocktail, @dose] do |f| %>
+  <div class="form-group text-center center col-lg-4">
+    <h1><%= f.label "Dose Quantity" %></h1>
+    <%= f.text_field :description, class: 'form-control' %>
+    <h1><%= f.label "Ingredient" %></h1>
+    <%= f.collection_select(:ingredient_id, Ingredient.all, :id, :name)%>
+    <%= f.button class: "btn btn-success" %>
+    <% end %>
+  </div>

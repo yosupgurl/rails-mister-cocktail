@@ -1,0 +1,22 @@
+<div class="navbar-wagon">
+  <!-- Logo -->
+  <a href="/cocktails" class="navbar-wagon-brand">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/World_Surf_League_Logo.png/220px-World_Surf_League_Logo.png" alt="logo">
+  </a>
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+    <%= link_to "Add a Wave", new_cocktail_path, class: "navbar-wagon-item navbar-wagon-link"  %>
+    <!-- Profile picture with dropdown list -->
+    <div class="navbar-wagon-item">
+      <div class="dropdown">
+        <div class="avatar dropdown-toggle" id="navbar-wagon-menu">
+            <%= image_tag("animat-campfire-color.gif", height: 50, width: 50, radius: 50, :aspect_ratio=>"1:1", :gravity=>"auto", :radius=>"max", :crop=>"fill") %>
+        </div>
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Log out</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

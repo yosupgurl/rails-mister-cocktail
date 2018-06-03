@@ -3,7 +3,7 @@
 <div>
   <% @cocktail.doses.each do |dose| %>
   <ul class="list-unstyled">
-    <li><%= dose.ingredient.name %> - <%= dose.description %> - <%= link_to("Delete", cocktail_dose_path(@cocktail, dose),
+    <li><%= dose.description %> - <%= dose.ingredient.name %> - <%= link_to("Delete", cocktail_dose_path(@cocktail, dose),
       class: "btn btn-danger",
       method: :delete) %> </li>
     <% end %>
